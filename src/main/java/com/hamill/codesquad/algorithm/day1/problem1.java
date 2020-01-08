@@ -1,7 +1,9 @@
 package com.hamill.codesquad.algorithm.day1;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 
 public class problem1 {
 
@@ -26,6 +28,8 @@ public class problem1 {
         //getOrDefault 를 넣어주지 않으면 중복 체크가 되지 않아요.
         //HashMap 의 put은 key가 존재하면 value 를 새로운 값으로 바꿔주니까요.
         //이미 등록된 동명이인이 있다면 hm.getOrDefault 로 인해서 2라는 값이 들어가겠네요
+
+        List<String> list = new ArrayList<>();
 
         HashMap<String, Integer> hm = new HashMap<>();
         for (String player : participant) {
