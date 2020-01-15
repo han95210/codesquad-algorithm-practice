@@ -1,5 +1,7 @@
 package com.hamill.codesquad.algorithm.day2;
 
+import java.util.Arrays;
+
 public class AnotherSol {
     public int[] solution(int[] array, int[][] commands) {
         int n = 0;
@@ -45,5 +47,12 @@ public class AnotherSol {
 
         if(left < pr) sort(a, left, pr);
         if(right > pl) sort(a, pl, right);
+    }
+
+    public static void main(String[] args) {
+        AnotherSol sol = new AnotherSol();
+        int[] array = {1,5,2,6,3,7,4};
+        int[][] commands = {{2,5,3},{4,4,1},{1,7,3}};
+        System.out.println(Arrays.toString(sol.solution(array, commands)));
     }
 }
